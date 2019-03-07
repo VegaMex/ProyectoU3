@@ -1,0 +1,13 @@
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\bin\Debug\Frontend.exe.config
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\bin\Debug\Frontend.exe
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\bin\Debug\Frontend.pdb
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.csprojAssemblyReference.cache
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.Properties.Resources.resources
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.csproj.GenerateResource.cache
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.exe
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.pdb
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\bin\Debug\Backend.dll
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\bin\Debug\Backend.pdb
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.Ventana.resources
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.csproj.CopyComplete
