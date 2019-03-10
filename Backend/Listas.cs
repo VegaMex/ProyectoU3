@@ -18,12 +18,20 @@ namespace Backend
 
         public void inicializarNombresH()
         {
-            nombresH = File.ReadAllLines("").ToList();
+            nombresH.Clear();
+            nombresH = File.ReadAllLines("NombresHombre.txt").ToList();
         }
 
         public void inicializarNombresM()
         {
+            nombresM.Clear();
+            nombresM = File.ReadAllLines("NombresMujer.txt").ToList();
+        }
 
+        public void inicializarApellidos()
+        {
+            apellidos.Clear();
+            apellidos = File.ReadLines("Apellidos.txt").ToList();
         }
     }
 }

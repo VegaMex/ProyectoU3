@@ -18,10 +18,71 @@ namespace Frontend
             InitializeComponent();
         }
 
+        Random random = new Random();
+        Listas listas = new Listas();
+        Aleatorios ale = new Aleatorios();
+        string nombre;
+        string nTemp;
+        string control;
+        int numeroNombres;
+        int sexo;
+
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            Listas listas = new Listas();
+
+
+
+            //for (int i = 0; i < 5000; i++)
+            //{
+            //    nombre = "";
+            //    nTemp = "";
+            //    control = "";
+
+            //    numeroNombres = random.Next(1, 4);
+            //    sexo = random.Next(2);
+
+            //    control = "(numeronombres = " + numeroNombres + ")";
+
+            //    if (sexo == 0)//Mujer
+            //    {
+            //        for (int j = 0; j < numeroNombres; j++)
+            //        {
+            //            nTemp += " " + listas.nombresM.ElementAt(random.Next(999));
+            //        }
+            //        nombre = nTemp;
+            //        nombre += " " + listas.apellidos.ElementAt(random.Next(999));
+            //        nombre += " " + listas.apellidos.ElementAt(random.Next(999));
+            //    }
+            //    else//Hombre
+            //    {
+            //        for (int j = 0; j < numeroNombres; j++)
+            //        {
+            //            nTemp += " " + listas.nombresH.ElementAt(random.Next(999));
+            //        }
+            //        nombre = nTemp;
+            //        nombre += " " + listas.apellidos.ElementAt(random.Next(999));
+            //        nombre += " " + listas.apellidos.ElementAt(random.Next(999));
+            //    }
+
+            //    Console.WriteLine(nombre);
+            //    Console.ReadLine();
+            //}
+
+
+            ale.init();
+
+            string[] dat = ale.datos();
+
+            Console.WriteLine(dat[0]);
+            Console.ReadLine();
+
+        }
+
+        private void Ventana_Load(object sender, EventArgs e)
+        {
             listas.inicializarNombresH();
+            listas.inicializarNombresM();
+            listas.inicializarApellidos();
         }
     }
 }
