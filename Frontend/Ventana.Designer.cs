@@ -30,6 +30,7 @@
         {
             this.btnIniciar = new System.Windows.Forms.Button();
             this.pruebas = new System.Windows.Forms.Label();
+            this.progreso = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnIniciar
@@ -51,11 +52,19 @@
             this.pruebas.TabIndex = 1;
             this.pruebas.Text = "label1";
             // 
+            // progreso
+            // 
+            this.progreso.Location = new System.Drawing.Point(13, 117);
+            this.progreso.Name = "progreso";
+            this.progreso.Size = new System.Drawing.Size(282, 23);
+            this.progreso.TabIndex = 2;
+            // 
             // Ventana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progreso);
             this.Controls.Add(this.pruebas);
             this.Controls.Add(this.btnIniciar);
             this.Name = "Ventana";
@@ -70,5 +79,6 @@
 
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label pruebas;
+        private System.Windows.Forms.ProgressBar progreso;
     }
 }

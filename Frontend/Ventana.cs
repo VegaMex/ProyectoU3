@@ -71,10 +71,19 @@ namespace Frontend
 
             ale.init();
 
-            string[] dat = ale.datos();
+            this.progreso.Value = 0;
 
-            Console.WriteLine(dat[0]);
-            Console.ReadLine();
+            for (int i = 0; i < 10000; i++)
+            {
+                string[] dat = ale.datos();
+
+                Console.WriteLine(dat[0]);
+                Console.WriteLine(dat[1]);
+                Console.WriteLine(dat[2]);
+                Console.ReadLine();
+
+                //this.progreso.Increment((int)(0.01 * 100.0f));
+            }
 
         }
 

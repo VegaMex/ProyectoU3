@@ -11,10 +11,11 @@ namespace Backend
     {
 
 
-
+        
         public List<string> nombresH = new List<string>();
         public List<string> nombresM = new List<string>();
         public List<string> apellidos = new List<string>();
+        public List<string> alfa = new List<string>();
 
         public void inicializarNombresH()
         {
@@ -32,6 +33,12 @@ namespace Backend
         {
             apellidos.Clear();
             apellidos = File.ReadLines("Apellidos.txt").ToList();
+        }
+
+        public void inicializarAlfa()
+        {
+            alfa.Clear();
+            alfa = File.ReadLines("Alfa.txt").ToList();
         }
     }
 }
