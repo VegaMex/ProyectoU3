@@ -23,7 +23,7 @@ namespace Backend
 
         public string[] datos()
         {
-            string[] data = new string[3];//entre 1950 y 2060
+            string[] data = new string[5];//entre 1950 y 2060
 
             string nombre = "";
             string nTemp = "";
@@ -34,6 +34,8 @@ namespace Backend
             string rfc;
 
             int year, month, day;
+            int postal, telefono;
+
             string yearS, monthS, dayS;
 
             year = random.Next(1950, 2061);
@@ -86,10 +88,10 @@ namespace Backend
 
             yearS = year.ToString();
 
-            fecha = "'" + yearS + "-" + monthS + "-" + dayS + "'";
+            fecha = yearS + "-" + monthS + "-" + dayS;
 
             int numeroNombres = random.Next(1, 4);
-            int sexo = random.Next(2);
+            int sexo = random.Next(0, 2);
 
             if (sexo == 0)//Mujer
             {
@@ -115,11 +117,11 @@ namespace Backend
                 {
                     if (nTemp == "")
                     {
-                        nTemp = listas.nombresM.ElementAt(random.Next(999));
+                        nTemp = listas.nombresH.ElementAt(random.Next(999));
                     }
                     else
                     {
-                        nTemp += " " + listas.nombresM.ElementAt(random.Next(999));
+                        nTemp += " " + listas.nombresH.ElementAt(random.Next(999));
                     }
                 }
                 nombre = nTemp;
@@ -127,6 +129,10 @@ namespace Backend
                 ape2 = listas.apellidos.ElementAt(random.Next(999));
                 nombre += " " + ape1 + " " + ape2;
             }
+
+            postal = random.Next(10000, 99999);
+
+            telefono = random.Next(1000000, 9999999);
 
             int a = random.Next(37);
             int b = random.Next(37);
@@ -138,9 +144,13 @@ namespace Backend
 
             data[0] = nombre;
 
-            data[1] = fecha;
+            data[1] = rfc;
 
-            data[2] = rfc;
+            data[2] = postal + "";
+
+            data[3] = "445" + telefono + "";
+
+            data[4] = fecha;
 
             return data;
         }

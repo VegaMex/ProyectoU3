@@ -11,3 +11,4 @@ C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.csproj.Co
 C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.csproj.CopyComplete
 C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.exe
 C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\obj\Debug\Frontend.pdb
+C:\Users\oscar\Documents\GitHub\ProyectoU3\Frontend\bin\Debug\MySql.Data.dll

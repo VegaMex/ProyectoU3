@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.btnIniciar = new System.Windows.Forms.Button();
-            this.pruebas = new System.Windows.Forms.Label();
-            this.progreso = new System.Windows.Forms.ProgressBar();
+            this.cantidad = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(13, 13);
+            this.btnIniciar.Location = new System.Drawing.Point(12, 49);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(75, 23);
             this.btnIniciar.TabIndex = 0;
@@ -43,29 +42,20 @@
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
-            // pruebas
+            // cantidad
             // 
-            this.pruebas.AutoSize = true;
-            this.pruebas.Location = new System.Drawing.Point(95, 13);
-            this.pruebas.Name = "pruebas";
-            this.pruebas.Size = new System.Drawing.Size(35, 13);
-            this.pruebas.TabIndex = 1;
-            this.pruebas.Text = "label1";
-            // 
-            // progreso
-            // 
-            this.progreso.Location = new System.Drawing.Point(13, 117);
-            this.progreso.Name = "progreso";
-            this.progreso.Size = new System.Drawing.Size(282, 23);
-            this.progreso.TabIndex = 2;
+            this.cantidad.Enabled = false;
+            this.cantidad.Location = new System.Drawing.Point(12, 12);
+            this.cantidad.Name = "cantidad";
+            this.cantidad.Size = new System.Drawing.Size(100, 20);
+            this.cantidad.TabIndex = 2;
             // 
             // Ventana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.progreso);
-            this.Controls.Add(this.pruebas);
+            this.ClientSize = new System.Drawing.Size(242, 113);
+            this.Controls.Add(this.cantidad);
             this.Controls.Add(this.btnIniciar);
             this.Name = "Ventana";
             this.Text = "Ventana";
@@ -78,7 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnIniciar;
-        private System.Windows.Forms.Label pruebas;
-        private System.Windows.Forms.ProgressBar progreso;
+        private System.Windows.Forms.TextBox cantidad;
     }
 }
