@@ -56,18 +56,18 @@ namespace Frontend
 
             //Console.WriteLine("Ya se pusieron.");
 
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 1; i++)
             {
 
                 String SQL = "INSERT INTO Contratos (nombre_de_empleado, rfc, codigo_postal, telefono, fechaContratacion) VALUES";
 
                 String aux = "";
 
-                for (int u = 0; u < 10000; u++)
+                for (int u = 0; u < 100; u++)
                 {
                     string[] dat = ale.datos();
 
-                    if (u == 9999)
+                    if (u == 99)
                     {
                         aux = "('" + dat[0] + "', " + "'" + dat[1] + "', " + "'" + dat[2] + "', " + "'" + dat[3] + "', " + "'" + dat[4] + "');";
                         SQL += aux;
@@ -91,7 +91,7 @@ namespace Frontend
 
                 sqlConn.Close();
 
-                reg += 10000;
+                reg += 100;
 
                 Console.WriteLine((i + 1) +". Se han insertado: " + reg + " registros.");
 
